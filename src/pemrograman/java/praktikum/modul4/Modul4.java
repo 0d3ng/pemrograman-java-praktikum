@@ -5,6 +5,9 @@
  */
 package pemrograman.java.praktikum.modul4;
 
+import java.io.File;
+import java.util.Scanner;
+
 /**
  *
  * @author od3ng
@@ -25,19 +28,35 @@ public class Modul4 {
     }
 
     private static void Latihan2() {
-        double grade = 92;
-        switch ((int) grade) {
-            case 100:
-                System.out.println("Excellent!");
+//        double grade = 92;
+//        switch ((int) grade) {
+//            case 100:
+//            case 92:
+//                System.out.println("Excellent!");
+//                break;
+//            case 90:
+//                System.out.println("Good Job!");
+//                break;
+//            case 80:
+//                System.out.println("Study Hardner");
+//                break;
+//            default:
+//                System.out.println("Sorry you failed");
+//        }
+        String nama = "tono";
+        switch (nama) {
+            case "tono":
+            case "toni":
+            case "tini":
+            case "tika":
+                System.out.println("Mahasiswa");
                 break;
-            case 90:
-                System.out.println("Good Job!");
-                break;
-            case 80:
-                System.out.println("Study Hardner");
+            case "pak budi":
+            case "pak badu":
+                System.out.println("Dosen");
                 break;
             default:
-                System.out.println("Sorry you failed");
+                System.out.println("Another");
         }
     }
 
@@ -45,8 +64,9 @@ public class Modul4 {
         String names[] = {"Tono", "Tini", "Tito", "Tedy", "Toni", "Tommy", "Tompel", "Tompi", "Tika"};
         String searchName = "Yza";
         boolean found = false;
-        for (int i = 0; i < names.length; i++) {
-            if (names[i].equals(searchName)) {
+
+        for (String name : names) {
+            if (name.equals(searchName)) {
                 found = true;
                 break;
             }
@@ -88,12 +108,34 @@ public class Modul4 {
         outerLoop:
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
-                System.out.println("Inside for(j) loop "+(count++));
+                System.out.println("Inside for(j) loop " + (count++));
                 if (j == 2) {
                     continue outerLoop;
                 }
             }
             System.out.println("Inside for(i) loop");
+        }
+    }
+
+    private static void TugasKelas() {
+        float bilangan;
+        int temp;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Masukan bilangan:");
+        bilangan = s.nextFloat();
+        temp = (int) bilangan;
+        if (bilangan == 0) {
+            System.out.println("Bilangan nol");
+        } else if ((bilangan - temp) > 0) {
+            System.out.println("Bilangan pecahan positif");
+        } else if ((bilangan - temp) < 0) {
+            System.out.println("Bilangan pecahan negatif");
+        } else if ((bilangan - temp) == 0 && bilangan > 0) {
+            System.out.println("Bilangan bulat positif");
+        } else if ((bilangan - temp) == 0 && bilangan < 0) {
+            System.out.println("Bilangan bulat negatif");
+        } else {
+            System.out.println("Bilangan yang lain");
         }
     }
 
@@ -103,6 +145,7 @@ public class Modul4 {
 //        Latihan3();
 //        Latihan4();
 //        Latihan5();
-        Latihan6();
+//        Latihan6();
+        TugasKelas();
     }
 }
