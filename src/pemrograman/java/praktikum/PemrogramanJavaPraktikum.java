@@ -5,6 +5,8 @@
  */
 package pemrograman.java.praktikum;
 
+import pemrograman.java.praktikum.modul5.Modul5;
+
 /**
  *
  * @author nopri
@@ -16,7 +18,16 @@ public class PemrogramanJavaPraktikum {
      */
     public static void main(String[] args) {
 //        Tugas.tugas1();
-        Tugas.tugas2();
+//        Tugas.tugas2();
+//Modul 5
+//=======================
+//        Modul5.contoh1();
+//        Modul5.contoh2();
+//        Modul5.contoh3();
+//        Modul5.contoh4();
+        Modul5.contoh5();
+//        Modul5.matrikIdentitas();
+//        Modul5.calculateSubMatriks();
     }
 
 }
