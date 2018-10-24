@@ -43,10 +43,9 @@ public class Modul5 {
         {"kristin", "white"},
         {"toby", "grey"},
         {"fido", "black"},};
-        for (int i = 0; i < dogs.length; i++) {
-            for (int j = 0; j < dogs[i].length; j++) {
-                System.out.print(dogs[i][j] + "\t");
-
+        for (String[] dog : dogs) {
+            for (String dog1 : dog) {
+                System.out.print(dog1 + "\t");
             }
             System.out.println("");
         }

@@ -21,11 +21,11 @@ public class PemrogramanJavaPraktikum {
 //        Tugas.tugas2();
 //Modul 5
 //=======================
-//        Modul5.contoh1();
+        Modul5.contoh1();
 //        Modul5.contoh2();
 //        Modul5.contoh3();
 //        Modul5.contoh4();
-        Modul5.contoh5();
+//        Modul5.contoh5();
 //        Modul5.matrikIdentitas();
 //        Modul5.calculateSubMatriks();
     }
