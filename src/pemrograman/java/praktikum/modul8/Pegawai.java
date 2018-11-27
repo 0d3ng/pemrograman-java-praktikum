@@ -18,6 +18,15 @@ public class Pegawai extends Orang{
     
     private String nip;
 
+    public Pegawai(String nip, String nama, String alamat) {
+        super(nama, alamat);
+        this.nip = nip;
+    }
+
+    public Pegawai(String nama, String alamat) {
+        super(nama, alamat);
+    }
+
     public String getNip() {
         return nip;
     }
@@ -26,5 +35,7 @@ public class Pegawai extends Orang{
         this.nip = nip;
     }
     
-    
+    public String getNamaFromPegawai(){
+        return super.getNama();
+    }
 }

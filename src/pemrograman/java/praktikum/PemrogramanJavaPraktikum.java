@@ -5,14 +5,10 @@
  */
 package pemrograman.java.praktikum;
 
-import pemrograman.java.praktikum.modul5.Modul5;
 import pemrograman.java.praktikum.modul8.Pegawai;
-import pemrograman.java.praktikum.modul8.overriding.Bayi;
-import pemrograman.java.praktikum.modul8.overriding.Dewasa;
-import pemrograman.java.praktikum.modul8.polimorfisme.Anjing;
-import pemrograman.java.praktikum.modul8.polimorfisme.Hewan;
-import pemrograman.java.praktikum.modul8.polimorfisme.Kambing;
-import pemrograman.java.praktikum.modul8.polimorfisme.Kucing;
+import pemrograman.java.praktikum.modul8.interfacevsabstract.BangunDatarInterface;
+import pemrograman.java.praktikum.modul8.interfacevsabstract.Lingkaran;
+import pemrograman.java.praktikum.modul8.interfacevsabstract.PersegiPanjang;
 
 /**
  *
@@ -38,25 +34,31 @@ public class PemrogramanJavaPraktikum {
 
 //modul 8
 //========================================
-//        Pegawai p = new Pegawai();
+//        Pegawai p = new Pegawai("Noprianto","Yogyakarta","1234");
 //        p.setNip("1234");
 //        p.setNama("Noprianto");
 //        p.setAlamat("Jogja");
 //        System.out.println("" + p.getNip());
 //        System.out.println("" + p.getNama());
 //        System.out.println("" + p.getAlamat());
-
 //        Bayi b = new Bayi();
 //        b.lari();
 //        Dewasa d = new Dewasa();
 //        d.lari();
-
-        Hewan hewan = new Anjing();
-        hewan.bicara();
-        hewan = new Kambing();
-        hewan.bicara();
-        hewan = new Kucing();
-        hewan.bicara();
+//        Hewan hewan = new Anjing();
+//        hewan.bicara();
+//        hewan = new Kambing();
+//        hewan.bicara();
+//        hewan = new Kucing();
+//        hewan.bicara();
+//        PersegiPanjang pp = new PersegiPanjang(2, 3);
+//        System.out.println("luas    : " + pp.luas());
+//        System.out.println("keliling: " + pp.keliling());
+//        Lingkaran lingkaran = new Lingkaran();
+//        System.out.println("luas    : "+lingkaran.luas(14));
+//        System.out.println("keliling: "+lingkaran.keliling(14));
+        BangunDatarInterface datarInterface = new Lingkaran();
+        System.out.println("luas: "+datarInterface.luas(10));
     }
 
 }
