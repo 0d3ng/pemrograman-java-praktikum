@@ -10,7 +10,6 @@
  */
 package pemrograman.java.praktikum.modul10.tugas;
 
-import java.sql.SQLException;
 import java.util.List;
 
 /**
